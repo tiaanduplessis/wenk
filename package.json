@@ -8,6 +8,7 @@
     "build": "gulp build",
     "demo": "gulp demo",
     "dev": "gulp",
+    "size": "gulp size",
     "deploy": "gulp build && gh-pages -d demo"
   },
   "keywords": [
