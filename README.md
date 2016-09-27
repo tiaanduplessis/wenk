@@ -1,5 +1,5 @@
 # :wink: Wenk
-**Wenk** is a Lightweight tooltip written in pure CSS using PostCSS. The minified version is just 722 bytes when gzipped :scream:.
+**Wenk** is a Lightweight tooltip written in pure CSS using [PostCSS](http://postcss.org/). The **minified version is just 683 bytes when gzipped** :scream:.
 
 <p align="center">
 	<a href="#"><img width="80%" src="media/wenk.gif" alt="wenk"></a>
@@ -55,7 +55,7 @@ The width of the tooltip can also easily be changed.
 ```
 
 ## Demo
-Check out the demo here.
+Check out the demo [here](https://mightycrow.github.io/wenk/).
 
 ## Contributing
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:

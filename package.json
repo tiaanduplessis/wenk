@@ -2,7 +2,7 @@
   "name": "wenk",
   "version": "1.0.0",
   "description": "Lightweight pure CSS tooltip for the greater good",
-  "main": "wenk.css",
+  "main": "dist/wenk.css",
   "scripts": {
     "test": "echo lol nope yolo",
     "build": "gulp build",
@@ -12,9 +12,11 @@
     "deploy": "gulp build && gh-pages -d demo"
   },
   "keywords": [
+    "wenk",
     "pure CSS",
     "tooltip",
-    "lightweight"
+    "lightweight",
+    "hint"
   ],
   "author": "Tiaan du Plessis @mightyCrow",
   "license": "MIT",
