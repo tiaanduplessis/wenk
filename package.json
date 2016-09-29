@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo lol nope yolo",
     "build": "gulp build",
-    "demo": "gulp demo",
+    "start": "gulp demo",
     "dev": "gulp",
     "size": "gulp size",
     "deploy": "gulp build && gh-pages -d demo"
