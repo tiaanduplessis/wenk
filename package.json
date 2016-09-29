@@ -1,6 +1,6 @@
 {
   "name": "wenk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight pure CSS tooltip for the greater good",
   "main": "dist/wenk.css",
   "scripts": {

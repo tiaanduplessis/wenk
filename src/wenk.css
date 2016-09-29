@@ -29,6 +29,8 @@
         bottom: 100%;
         left: 50%;
         transform: translate(-50%, 10px);
+        white-space: pre;
+        width: auto;
     }
     &:after {
         opacity: 0;
@@ -42,6 +44,7 @@
             transform: translate(-50%, -10px);
         }
     }
+    
     /* ===[Tooltip Down]=== */
     &.wenk--bottom, &[data-wenk-pos="bottom"] {
         &:after {
@@ -56,6 +59,7 @@
             }
         }
     }
+
     /* ===[Tooltip Left]=== */
     &.wenk--left, &[data-wenk-pos="left"] {
         &:after {
@@ -71,6 +75,7 @@
             }
         }
     }
+
     /* ===[Tooltip Right]=== */
     &.wenk--right, &[data-wenk-pos="right"] {
         &:after {
@@ -85,6 +90,7 @@
             }
         }
     }
+
     /* ===[Length of tooltip]=== */
     &[data-wenk-length="small"]:after, &.wenk-length--small:after {
         white-space: normal;
@@ -102,10 +108,7 @@
         white-space: normal;
         width: 100%;
     }
-    &[data-wenk-length="auto"]:after, &.wenk-length--auto:after {
-        white-space: pre;
-        width: auto;
-    }
+
     /* ===[Alignment of tooltip]=== */
     &[data-wenk-align="right"]:after, &.wenk-align--right:after {
         text-align: right;

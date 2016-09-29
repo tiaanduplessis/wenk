@@ -14,6 +14,8 @@
 
 ```html
 <link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
+<!-- Or -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/mightyCrow/wenk/master/dist/wenk.css">
 ```
 
 **Install with Bower**
@@ -56,6 +58,12 @@ The width of the tooltip can also easily be changed.
 <span data-wenk="I'm medium!" class="wenk-length--large">Medium wenk!</span>
 <span data-wenk="I'm large!" class="wenk-length--large">Large wenk!</span>
 <span data-wenk="I fit!" class="wenk-length--fit">I fit just right!</span>
+```
+
+You can also align your text within the container
+```html
+<p><span data-wenk="I'm right!" class="wenk-align--right">Wenk to the right!</span></p>
+<p><span data-wenk="I'm center!" class="wenk-align--center">Wenk in the center!</span></p>
 ```
 
 ## Demo
