@@ -11,6 +11,7 @@
     /* ===[Tooltip Left]=== */
     /* ===[Tooltip Right]=== */
     /* ===[Length of tooltip]=== */
+    /* ===[Alignment of tooltip]=== */
 }
 [data-wenk]:after {
     position: absolute;
@@ -109,4 +110,14 @@
 [data-wenk][data-wenk-length="fit"]:after, [data-wenk].wenk-length--fit:after {
     white-space: normal;
     width: 100%
+}
+[data-wenk][data-wenk-length="auto"]:after, [data-wenk].wenk-length--auto:after {
+    white-space: pre;
+    width: auto
+}
+[data-wenk][data-wenk-align="right"]:after, [data-wenk].wenk-align--right:after {
+    text-align: right
+}
+[data-wenk][data-wenk-align="center"]:after, [data-wenk].wenk-align--center:after {
+    text-align: center
 }
