@@ -8,7 +8,6 @@
     position: relative;
     &:after {
         position: absolute;
-        transform: translateX(-50%);
         display: none;
         font-size: var(--font-size);
         border-radius: .4rem;
@@ -17,7 +16,6 @@
         background-color: var(--bg-color);
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
         color: var(--font-color);
-        width: 200px;
         line-height: 1.25rem;
         text-align: left;
         z-index: 1;
@@ -44,7 +42,7 @@
             transform: translate(-50%, -10px);
         }
     }
-    
+
     /* ===[Tooltip Down]=== */
     &.wenk--bottom, &[data-wenk-pos="bottom"] {
         &:after {

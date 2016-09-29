@@ -7,7 +7,7 @@
  */
  [data-wenk] {
     position: relative
-    
+
     /* ===[Tooltip Down]=== */
 
     /* ===[Tooltip Left]=== */
@@ -20,8 +20,6 @@
 }
 [data-wenk]:after {
     position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     display: none;
     font-size: 13px;
     border-radius: .4rem;
@@ -31,7 +29,6 @@
     background-color: rgba(17, 17, 17, .8);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
     color: #fff;
-    width: 200px;
     line-height: 20px;
     line-height: 1.25rem;
     text-align: left;
