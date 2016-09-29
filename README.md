@@ -12,7 +12,7 @@
 **Install with cdn**
 
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/mightyCrow/wenk/master/dist/wenk.min.css">
+<link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
 ```
 
 **Install with Bower**
