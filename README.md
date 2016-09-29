@@ -1,6 +1,7 @@
 # :wink: Wenk
 [![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/mightyCrow%2Fwenk)
 [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk)
+[![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk)
 
 **Wenk** is a Lightweight tooltip written in pure CSS using [PostCSS](http://postcss.org/). The **minified version is just 683 bytes when gzipped** :scream:.
 
