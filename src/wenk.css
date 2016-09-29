@@ -102,4 +102,8 @@
         white-space: normal;
         width: 100%;
     }
+    &[data-wenk-length="auto"]:after, &.wenk-length--auto:after {
+        white-space: pre;
+        width: auto;
+    }
 }
