@@ -6,7 +6,7 @@
 **Wenk** is a Lightweight tooltip written in pure CSS using [PostCSS](http://postcss.org/). The **minified version is just 712 bytes when gzipped** :scream:.
 
 <p align="center">
-	<a href="#"><img width="80%" src="media/wenk.gif" alt="wenk"></a>
+	<a href="#"><img width="90%" src="media/wenk.gif" alt="wenk"></a>
 </p>
 
 ## Install
