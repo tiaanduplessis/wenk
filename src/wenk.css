@@ -2,6 +2,9 @@
     --font-size: 13px;
     --font-color: #fff;
     --bg-color: rgba(17, 17, 17, .8);
+    --length-small: 80px;
+    --length-medium: 150px;
+    --length-large: 260px;
 }
 
 [data-wenk] {
@@ -92,15 +95,15 @@
     /* ===[Length of tooltip]=== */
     &[data-wenk-length="small"]:after, &.wenk-length--small:after {
         white-space: normal;
-        width: 80px;
+        width: var(--length-small);
     }
     &[data-wenk-length="medium"]:after, &.wenk-length--medium:after {
         white-space: normal;
-        width: 150px;
+        width: var(--length-medium);
     }
     &[data-wenk-length="large"]:after, &.wenk-length--large:after {
         white-space: normal;
-        width: 260px;
+        width: var(--length-large);
     }
     &[data-wenk-length="fit"]:after, &.wenk-length--fit:after {
         white-space: normal;
