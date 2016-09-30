@@ -93,7 +93,7 @@ $wenk-length-large: 260px !default;
     /* ===[Length of tooltip]=== */
     &[data-wenk-length="small"]:after, &.wenk-length--small:after {
         white-space: normal;
-        width: $wenk-small-length;
+        width: $wenk-length-small;
     }
     &[data-wenk-length="medium"]:after, &.wenk-length--medium:after {
         white-space: normal;
