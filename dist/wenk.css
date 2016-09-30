@@ -1,21 +1,25 @@
 /**
  * wenk - Lightweight pure CSS tooltip for the greater good
- * @version v1.0.0
+ * @version v1.0.1
  * (c) 2016 Tiaan du Plessis @mightyCrow |
  * @link 
  * @license MIT
  */
  [data-wenk] {
     position: relative
+
     /* ===[Tooltip Down]=== */
+
     /* ===[Tooltip Left]=== */
+
     /* ===[Tooltip Right]=== */
+
     /* ===[Length of tooltip]=== */
+
+    /* ===[Alignment of tooltip]=== */
 }
 [data-wenk]:after {
     position: absolute;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
     display: none;
     font-size: 13px;
     border-radius: .4rem;
@@ -25,7 +29,6 @@
     background-color: rgba(17, 17, 17, .8);
     box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
     color: #fff;
-    width: 200px;
     line-height: 20px;
     line-height: 1.25rem;
     text-align: left;
@@ -39,7 +42,9 @@
     bottom: 100%;
     left: 50%;
     -webkit-transform: translate(-50%, 10px);
-            transform: translate(-50%, 10px)
+            transform: translate(-50%, 10px);
+    white-space: pre;
+    width: auto
 }
 [data-wenk]:after {
     opacity: 0
@@ -109,4 +114,10 @@
 [data-wenk][data-wenk-length="fit"]:after, [data-wenk].wenk-length--fit:after {
     white-space: normal;
     width: 100%
+}
+[data-wenk][data-wenk-align="right"]:after, [data-wenk].wenk-align--right:after {
+    text-align: right
+}
+[data-wenk][data-wenk-align="center"]:after, [data-wenk].wenk-align--center:after {
+    text-align: center
 }

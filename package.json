@@ -1,12 +1,12 @@
 {
   "name": "wenk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Lightweight pure CSS tooltip for the greater good",
   "main": "dist/wenk.css",
   "scripts": {
     "test": "echo lol nope yolo",
     "build": "gulp build",
-    "demo": "gulp demo",
+    "start": "gulp demo",
     "dev": "gulp",
     "size": "gulp size",
     "deploy": "gulp build && gh-pages -d demo"

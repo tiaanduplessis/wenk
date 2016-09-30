@@ -8,7 +8,6 @@
     position: relative;
     &:after {
         position: absolute;
-        transform: translateX(-50%);
         display: none;
         font-size: var(--font-size);
         border-radius: .4rem;
@@ -17,7 +16,6 @@
         background-color: var(--bg-color);
         box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
         color: var(--font-color);
-        width: 200px;
         line-height: 1.25rem;
         text-align: left;
         z-index: 1;
@@ -29,6 +27,8 @@
         bottom: 100%;
         left: 50%;
         transform: translate(-50%, 10px);
+        white-space: pre;
+        width: auto;
     }
     &:after {
         opacity: 0;
@@ -42,6 +42,7 @@
             transform: translate(-50%, -10px);
         }
     }
+
     /* ===[Tooltip Down]=== */
     &.wenk--bottom, &[data-wenk-pos="bottom"] {
         &:after {
@@ -56,6 +57,7 @@
             }
         }
     }
+
     /* ===[Tooltip Left]=== */
     &.wenk--left, &[data-wenk-pos="left"] {
         &:after {
@@ -71,6 +73,7 @@
             }
         }
     }
+
     /* ===[Tooltip Right]=== */
     &.wenk--right, &[data-wenk-pos="right"] {
         &:after {
@@ -85,6 +88,7 @@
             }
         }
     }
+
     /* ===[Length of tooltip]=== */
     &[data-wenk-length="small"]:after, &.wenk-length--small:after {
         white-space: normal;
@@ -101,5 +105,13 @@
     &[data-wenk-length="fit"]:after, &.wenk-length--fit:after {
         white-space: normal;
         width: 100%;
+    }
+
+    /* ===[Alignment of tooltip]=== */
+    &[data-wenk-align="right"]:after, &.wenk-align--right:after {
+        text-align: right;
+    }
+    &[data-wenk-align="center"]:after, &.wenk-align--center:after {
+        text-align: center;
     }
 }

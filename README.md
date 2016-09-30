@@ -1,8 +1,9 @@
 # :wink: Wenk
 [![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/mightyCrow%2Fwenk)
 [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk)
+[![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk)
 
-**Wenk** is a Lightweight tooltip written in pure CSS using [PostCSS](http://postcss.org/). The **minified version is just 683 bytes when gzipped** :scream:.
+**Wenk** is a Lightweight tooltip written in pure CSS using [PostCSS](http://postcss.org/). The **minified version is just 712 bytes when gzipped** :scream:.
 
 <p align="center">
 	<a href="#"><img width="80%" src="media/wenk.gif" alt="wenk"></a>
@@ -12,7 +13,9 @@
 **Install with cdn**
 
 ```html
-<link rel="stylesheet" href="https://cdn.rawgit.com/mightyCrow/wenk/master/dist/wenk.min.css">
+<link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
+<!-- Or -->
+<link rel="stylesheet" href="https://cdn.rawgit.com/mightyCrow/wenk/master/dist/wenk.css">
 ```
 
 **Install with Bower**
@@ -55,6 +58,12 @@ The width of the tooltip can also easily be changed.
 <span data-wenk="I'm medium!" class="wenk-length--large">Medium wenk!</span>
 <span data-wenk="I'm large!" class="wenk-length--large">Large wenk!</span>
 <span data-wenk="I fit!" class="wenk-length--fit">I fit just right!</span>
+```
+
+You can also align your text within the container
+```html
+<p><span data-wenk="I'm right!" class="wenk-align--right">Wenk to the right!</span></p>
+<p><span data-wenk="I'm center!" class="wenk-align--center">Wenk in the center!</span></p>
 ```
 
 ## Demo
