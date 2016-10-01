@@ -33,4 +33,8 @@ node_modules
 .node_repl_history
 
 # Mac stuff
+*~
 .DS_Store
+
+# IDE
+.idea

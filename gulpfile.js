@@ -1,11 +1,12 @@
-const gulp = require('gulp')
+const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync')
+const browserSync = require('browser-sync');
 const del = require('del');
 const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
 const reload = browserSync.reload;
 // Pretty banner
+
 const banner = ['/**',
     ' * <%= pkg.name %> - <%= pkg.description %>',
     ' * @version v<%= pkg.version %>',
@@ -56,7 +57,7 @@ gulp.task('styles:minified', () => {
         }))
         .pipe(gulp.dest(paths.output))
         .pipe(gulp.dest('./demo'))
-})
+});
 
 gulp.task('styles', () => {
     return gulp.src(paths.input)
@@ -66,21 +67,21 @@ gulp.task('styles', () => {
             pkg
         }))
         .pipe(gulp.dest(paths.output))
-})
+});
 
-gulp.task('build', ['styles', 'styles:minified'])
+gulp.task('build', ['styles', 'styles:minified']);
 
 gulp.task('watch', () => {
     gulp.watch(paths.input, ['clean', 'build'])
-})
+});
 
 gulp.task('demo', ['clean', 'build'], () => {
   browserSync({
     server: './demo'
-  })
+  });
 
   gulp.watch(paths.input, ['build']);
   gulp.watch('./demo/**/*').on('change', reload);
 });
 
-gulp.task('default', ['build', 'watch'])
+gulp.task('default', ['build', 'watch']);

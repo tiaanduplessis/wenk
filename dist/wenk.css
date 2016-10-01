@@ -20,7 +20,6 @@
 }
 [data-wenk]:after {
     position: absolute;
-    display: none;
     font-size: 13px;
     border-radius: .4rem;
     content: attr(data-wenk);
