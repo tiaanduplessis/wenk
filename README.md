@@ -3,7 +3,7 @@
 [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk)
 [![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk)
 
-**Wenk** is a Lightweight tooltip available in pure CSS using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss). The **minified version is just 712 bytes when gzipped** :scream:.
+**Wenk** is a Lightweight tooltip available in pure CSS using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss). The **minified version is just 708 bytes when gzipped** :scream:.
 
 <p align="center">
 	<a href="#"><img width="90%" src="media/wenk.gif" alt="wenk"></a>
