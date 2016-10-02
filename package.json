@@ -21,8 +21,8 @@
   "author": "Tiaan du Plessis @mightyCrow",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "cssnano": "^3.7.5",
+    "browser-sync": "^2.17.0",
+    "cssnano": "^3.7.6",
     "del": "^2.2.2",
     "gh-pages": "^0.11.0",
     "gulp": "^3.9.1",
