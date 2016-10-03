@@ -1,4 +1,5 @@
 /demo
+/media
 .editorconfig
 .gitignore
 .travis.yml
