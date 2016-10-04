@@ -1,7 +1,7 @@
 {
   "name": "wenk",
-  "version": "1.0.1",
-  "description": "Lightweight pure CSS tooltip for the greater good",
+  "version": "1.0.2",
+  "description": "Lightweight tooltip for the greater good",
   "main": "dist/wenk.css",
   "scripts": {
     "test": "echo lol nope yolo",
@@ -17,6 +17,9 @@
     "tooltip",
     "lightweight",
     "hint"
+  ],
+  "files": [
+    "dist"
   ],
   "author": "Tiaan du Plessis @mightyCrow",
   "license": "MIT",

@@ -1,13 +1,16 @@
 # :wink: Wenk
-[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/mightyCrow%2Fwenk)
-[![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk)
-[![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk)
+[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/mightyCrow%2Fwenk) [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk) [![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk) [![Build Status](https://travis-ci.org/mightyCrow/wenk.svg?branch=master)](https://travis-ci.org/mightyCrow/wenk)
 
-**Wenk** is a Lightweight tooltip available in pure CSS using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss). The **minified version is just 708 bytes when gzipped** :scream:.
+**Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss).
 
 <p align="center">
 	<a href="#"><img width="90%" src="media/wenk.gif" alt="wenk"></a>
 </p>
+
+## Why
+- It's Lightweight with the **minified version being only 701 bytes when gzipped** :scream:
+- It's easy to use
+- It's easy to customize
 
 ## Install
 **Install with cdn**
@@ -68,6 +71,9 @@ You can also align your text within the container
 
 ## Demo
 Check out the demo [here](https://mightycrow.github.io/wenk/).
+
+## TODO :memo:
+- Add Stylus version
 
 ## Contributing
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
