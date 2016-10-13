@@ -33,6 +33,12 @@ $ bower install wenk
 $ npm install wenk
 ```
 
+**Install with yarn**
+
+```sh
+$ yarn add wenk
+```
+
 ## Usage
 Simply add the `data-wenk` attribute to your HTML with the text you want to display.
 ```html
