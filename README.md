@@ -18,7 +18,7 @@
 ```html
 <link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
 <!-- Or -->
-<link rel="stylesheet" href="https://cdn.rawgit.com/mightyCrow/wenk/master/dist/wenk.css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/tiaanduplessis/wenk/master/dist/wenk.css">
 ```
 
 **Install with Bower**
@@ -76,7 +76,7 @@ You can also align your text within the container
 ```
 
 ## Demo
-Check out the demo [here](https://mightycrow.github.io/wenk/).
+Check out the demo [here](https://tiaanduplessis.github.io/wenk/).
 
 ## TODO :memo:
 - Add Stylus version
@@ -85,4 +85,4 @@ Check out the demo [here](https://mightycrow.github.io/wenk/).
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
 
 ## License
-Created with ♥ by [Tiaan du Plessis](https://github.com/mightyCrow). Licensed under the MIT License.
+Created with ♥ by [Tiaan du Plessis](https://github.com/tiaanduplessis). Licensed under the MIT License.

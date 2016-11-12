@@ -21,7 +21,7 @@
   "files": [
     "dist"
   ],
-  "author": "Tiaan du Plessis @mightyCrow",
+  "author": "Tiaan du Plessis @tiaanduplessis",
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.17.0",
