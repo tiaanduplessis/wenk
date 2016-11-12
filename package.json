@@ -21,6 +21,7 @@
   "files": [
     "dist"
   ],
+  "homepage": "https://tiaanduplessis.github.io/wenk/",
   "author": "Tiaan du Plessis @tiaanduplessis",
   "license": "MIT",
   "devDependencies": {
