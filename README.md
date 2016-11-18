@@ -78,6 +78,13 @@ You can also align your text within the container
 ## Demo
 Check out the demo [here](https://tiaanduplessis.github.io/wenk/).
 
+## Browser Support
+According to [doiuse.com](http://www.doiuse.com/) the following browsers are currently missing support:
+- IE (8,10)
+- Opera (12.1)
+- Opera Mini (5.0-8.0)
+- IE Mobile (10)
+
 ## TODO :memo:
 - Add Stylus version
 
