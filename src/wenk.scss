@@ -115,3 +115,7 @@ $wenk-length-large: 260px !default;
         text-align: center;
     }
 }
+
+[data-wenk=""]:after {
+    visibility: hidden !important;
+}
