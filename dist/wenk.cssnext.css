@@ -119,3 +119,7 @@
         text-align: center;
     }
 }
+
+[data-wenk=""]:after {
+    visibility: hidden !important;
+}
