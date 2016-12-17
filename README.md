@@ -1,5 +1,5 @@
 # :wink: Wenk
-[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/mightyCrow%2Fwenk) [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk) [![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk) [![Build Status](https://travis-ci.org/mightyCrow/wenk.svg?branch=master)](https://travis-ci.org/mightyCrow/wenk)
+[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/tiaanduplessis%2Fwenk) [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk) [![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk) [![Build Status](https://travis-ci.org/mightyCrow/wenk.svg?branch=master)](https://travis-ci.org/tiaanduplessis/wenk)
 
 **Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss).
 
