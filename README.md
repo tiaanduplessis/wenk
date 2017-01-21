@@ -16,7 +16,7 @@
 	<a href="https://travis-ci.org/tiaanduplessis/wenk">
     <img src="https://img.shields.io/travis/tiaanduplessis/wenk/master.svg?style=flat-square" alt="Travis Build" />
   </a>
-	<a href="https://npmjs.org/package/choo">
+	<a href="https://npmjs.org/package/wenk">
     <img src="https://img.shields.io/npm/dm/wenk.svg?style=flat-square" alt="Downloads" />
   </a>
 </div>
