@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-	<strong>Wenk</strong> is a lightweight tooltip available in pure CSS, <a href="http://cssnext.io/">cssnext</a> using <a href="http://postcss.org/">PostCSS</a>, <a href="https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less">Less</a> or <a href="https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss">SCSS</a>.
+	Lightweight pure CSS tooltip for the greater good
 </div>
 
 <div align="center">
@@ -25,12 +25,32 @@
   Built with ❤︎ by <a href="http://tiaanduplessis.co.za/">Tiaan du Plessis</a> and <a href="https://github.com/tiaanduplessis/wenk/graphs/contributors">contributors</a>
 </div>
 
+<h2>Table of Contents</h2>
+<details>
+  <summary>Table of Contents</summary>
+  <li><a href="#introduction">Introduction</a></li>
+  <li><a href="#why">Why</a></li>
+  <li><a href="#install">Install</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#demo">Demo</a></li>
+  <li><a href="#support">Support</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+  <li><a href="#license">License</a></li>
+</details>
+
+## Introduction
+
+**Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss).
+
 ## Why
-- It's Lightweight with the **minified version being only 701 bytes when gzipped** :scream:
+
+- It's Lightweight with the **minified version being only 733 bytes when gzipped** :scream:
 - It's easy to use
 - It's easy to customize
+- Your already here
 
 ## Install
+
 **Install with cdn**
 
 ```html
@@ -99,9 +119,11 @@ You can also align your text within the container
 ```
 
 ## Demo
+
 Check out the demo [here](https://tiaanduplessis.github.io/wenk/).
 
-## Browser Support
+## Support
+
 According to [doiuse.com](http://www.doiuse.com/) the following browsers are currently missing support:
 - IE (8,10)
 - Opera (12.1)
@@ -109,7 +131,9 @@ According to [doiuse.com](http://www.doiuse.com/) the following browsers are cur
 - IE Mobile (10)
 
 ## Contributing
+
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
 
 ## License
+
 Created with ♥ by [Tiaan du Plessis](http://tiaanduplessis.co.za/). Licensed under the MIT License.
