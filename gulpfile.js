@@ -107,7 +107,7 @@ gulp.task('styles:cssnext', () => {
 gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:scss', 'styles:cssnext']);
 
 gulp.task('watch', () => {
-    gulp.watch(paths.input, ['clean', 'build'])
+    gulp.watch([paths.input.css, paths.input.less, paths.input.scss], ['clean', 'build'])
 });
 
 gulp.task('demo', ['clean', 'build'], () => {
@@ -115,7 +115,7 @@ gulp.task('demo', ['clean', 'build'], () => {
     server: './demo'
   });
 
-  gulp.watch(paths.input.css, ['build']);
+  gulp.watch([paths.input.css, paths.input.less, paths.input.scss], ['build']);
   gulp.watch('./demo/**/*').on('change', reload);
 });
 
