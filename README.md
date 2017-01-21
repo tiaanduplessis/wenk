@@ -1,11 +1,11 @@
 <div align="center">
 	<img src="media/banner.png" alt="wenk">
 </div>
-
+<br>
 <div align="center">
 	Lightweight pure CSS tooltip for the greater good
 </div>
-
+<br>
 <div align="center">
 	<a href="https://badge.fury.io/js/wenk">
     <img src="https://badge.fury.io/js/wenk.svg?style=flat-square" alt="npm version" />
@@ -20,7 +20,7 @@
     <img src="https://img.shields.io/npm/dm/wenk.svg?style=flat-square" alt="Downloads" />
   </a>
 </div>
-
+<br>
 <div align="center">
   Built with ❤︎ by <a href="http://tiaanduplessis.co.za/">Tiaan du Plessis</a> and <a href="https://github.com/tiaanduplessis/wenk/graphs/contributors">contributors</a>
 </div>
@@ -136,4 +136,4 @@ All Contributions are welcome! Please open up an issue if you would like to help
 
 ## License
 
-Created with ♥ by [Tiaan du Plessis](http://tiaanduplessis.co.za/). Licensed under the MIT License.
+Licensed under the MIT License.
