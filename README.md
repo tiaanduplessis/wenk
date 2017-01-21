@@ -1,11 +1,29 @@
-# :wink: Wenk
-[![GitHub version](https://badge.fury.io/gh/mightyCrow%2Fwenk.svg)](https://badge.fury.io/gh/tiaanduplessis%2Fwenk) [![npm version](https://badge.fury.io/js/wenk.svg)](https://badge.fury.io/js/wenk) [![Bower version](https://badge.fury.io/bo/wenk.svg)](https://badge.fury.io/bo/wenk) [![Build Status](https://travis-ci.org/mightyCrow/wenk.svg?branch=master)](https://travis-ci.org/tiaanduplessis/wenk)
+<div align="center">
+	<img src="media/banner.png" alt="wenk">
+</div>
 
-**Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss).
+<div align="center">
+	<strong>Wenk</strong> is a lightweight tooltip available in pure CSS, <a href="http://cssnext.io/">cssnext</a> using <a href="http://postcss.org/">PostCSS</a>, <a href="https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.less">Less</a> or <a href="https://raw.githubusercontent.com/mightyCrow/wenk/master/src/wenk.scss">SCSS</a>.
+</div>
 
-<p align="center">
-	<a href="#"><img width="90%" src="media/wenk.gif" alt="wenk"></a>
-</p>
+<div align="center">
+	<a href="https://badge.fury.io/js/wenk">
+    <img src="https://badge.fury.io/js/wenk.svg?style=flat-square" alt="npm version" />
+  </a>
+	<a href="https://badge.fury.io/bo/wenk">
+    <img src="https://badge.fury.io/bo/wenk.svg?style=flat-square" alt="Bower package" />
+  </a>
+	<a href="https://travis-ci.org/tiaanduplessis/wenk">
+    <img src="https://img.shields.io/travis/tiaanduplessis/wenk/master.svg?style=flat-square" alt="Travis Build" />
+  </a>
+	<a href="https://npmjs.org/package/choo">
+    <img src="https://img.shields.io/npm/dm/wenk.svg?style=flat-square" alt="Downloads" />
+  </a>
+</div>
+
+<div align="center">
+  Built with ❤︎ by <a href="http://tiaanduplessis.co.za/">Tiaan du Plessis</a> and <a href="https://github.com/tiaanduplessis/wenk/graphs/contributors">contributors</a>
+</div>
 
 ## Why
 - It's Lightweight with the **minified version being only 701 bytes when gzipped** :scream:
@@ -40,6 +58,11 @@ $ yarn add wenk
 ```
 
 ## Usage
+
+<div align="center">
+	<img width="90%" src="media/wenk.gif" alt="wenk">
+</div>
+
 Simply add the `data-wenk` attribute to your HTML with the text you want to display.
 ```html
 <span data-wenk="This is a tooltip!"></span>
@@ -84,9 +107,6 @@ According to [doiuse.com](http://www.doiuse.com/) the following browsers are cur
 - Opera (12.1)
 - Opera Mini (5.0-8.0)
 - IE Mobile (10)
-
-## TODO :memo:
-- Add Stylus version
 
 ## Contributing
 All Contributions are welcome! Please open up an issue if you would like to help out. :smile:
