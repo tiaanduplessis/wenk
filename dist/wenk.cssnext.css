@@ -1,4 +1,11 @@
-:root {
+/**
+ * wenk - Lightweight tooltip for the greater good
+ * @version v1.0.5
+ * (c) 2017 Tiaan du Plessis @tiaanduplessis |
+ * @link https://tiaanduplessis.github.io/wenk/
+ * @license MIT
+ */
+ :root {
     --font-size: 13px;
     --font-color: #fff;
     --bg-color: rgba(17, 17, 17, .8);

@@ -1,7 +1,7 @@
 {
   "name": "wenk",
-  "version": "1.0.1",
-  "description": "Lightweight pure CSS tooltip for the greater good",
+  "version": "1.0.5",
+  "description": "Lightweight tooltip for the greater good",
   "main": "dist/wenk.css",
   "scripts": {
     "test": "echo lol nope yolo",
@@ -18,13 +18,17 @@
     "lightweight",
     "hint"
   ],
-  "author": "Tiaan du Plessis @mightyCrow",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://tiaanduplessis.github.io/wenk/",
+  "author": "Tiaan du Plessis @tiaanduplessis",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.16.0",
-    "cssnano": "^3.7.5",
+    "browser-sync": "^2.17.0",
+    "cssnano": "^3.7.6",
     "del": "^2.2.2",
-    "gh-pages": "^0.11.0",
+    "gh-pages": "^0.12.0",
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",
     "gulp-load-plugins": "^1.3.0",

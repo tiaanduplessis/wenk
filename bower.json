@@ -1,9 +1,9 @@
 {
   "name": "wenk",
-  "description": "Lightweight pure CSS tooltip for the greater good",
+  "description": "Lightweight tooltip for the greater good",
   "main": "dist/wenk.css",
   "authors": [
-    "Tiaan du Plessis @mightyCrow"
+    "Tiaan du Plessis @tiaanduplessis"
   ],
   "license": "MIT",
   "keywords": [

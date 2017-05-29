@@ -1,0 +1,124 @@
+@wenk-font-size: 13px;
+@wenk-font-color: #fff;
+@wenk-bg-color: rgba(17, 17, 17, .8);
+@wenk-length-small: 80px;
+@wenk-length-medium: 150px;
+@wenk-length-large: 260px;
+[data-wenk] {
+	position: relative;
+	&:after {
+		position: absolute;
+		font-size: @wenk-font-size;
+		border-radius: .4rem;
+		content: attr(data-wenk);
+		padding: .8rem;
+		background-color: @wenk-bg-color;
+		box-shadow: 0 0 14px rgba(0, 0, 0, 0.1);
+		color: @wenk-font-color;
+		line-height: 1.25rem;
+		text-align: left;
+		z-index: 1;
+		pointer-events: none;
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		transition: all .3s;
+		bottom: 100%;
+		left: 50%;
+		transform: translate(-50%, 10px);
+		white-space: pre;
+		width: auto;
+	}
+	&:after {
+		opacity: 0;
+	}
+	&:hover {
+		overflow: visible;
+		&:after {
+			display: block;
+			opacity: 1;
+			visibility: visible;
+			transform: translate(-50%, -10px);
+		}
+	}
+	/* ===[Tooltip Down]=== */
+	&.wenk--bottom,
+	&[data-wenk-pos="bottom"] {
+		&:after {
+			bottom: auto;
+			top: 100%;
+			left: 50%;
+			transform: translate(-50%, -10px);
+		}
+		&:hover {
+			&:after {
+				transform: translate(-50%, 10px);
+			}
+		}
+	}
+	/* ===[Tooltip Left]=== */
+	&.wenk--left,
+	&[data-wenk-pos="left"] {
+		&:after {
+			bottom: auto;
+			left: auto;
+			top: 50%;
+			right: 100%;
+			transform: translate(10px, -50%);
+		}
+		&:hover {
+			&:after {
+				transform: translate(-10px, -50%);
+			}
+		}
+	}
+	/* ===[Tooltip Right]=== */
+	&.wenk--right,
+	&[data-wenk-pos="right"] {
+		&:after {
+			bottom: auto;
+			top: 50%;
+			left: 100%;
+			transform: translate(-10px, -50%);
+		}
+		&:hover {
+			&:after {
+				transform: translate(10px, -50%);
+			}
+		}
+	}
+	/* ===[Length of tooltip]=== */
+	&[data-wenk-length="small"]:after,
+	&.wenk-length--small:after {
+		white-space: normal;
+		width: @wenk-length-small;
+	}
+	&[data-wenk-length="medium"]:after,
+	&.wenk-length--medium:after {
+		white-space: normal;
+		width: @wenk-length-medium;
+	}
+	&[data-wenk-length="large"]:after,
+	&.wenk-length--large:after {
+		white-space: normal;
+		width: @wenk-length-large;
+	}
+	&[data-wenk-length="fit"]:after,
+	&.wenk-length--fit:after {
+		white-space: normal;
+		width: 100%;
+	}
+	/* ===[Alignment of tooltip]=== */
+	&[data-wenk-align="right"]:after,
+	&.wenk-align--right:after {
+		text-align: right;
+	}
+	&[data-wenk-align="center"]:after,
+	&.wenk-align--center:after {
+		text-align: center;
+	}
+}
+
+[data-wenk=""]:after {
+	visibility: hidden !important;
+}
