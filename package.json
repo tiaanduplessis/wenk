@@ -28,7 +28,7 @@
   "devDependencies": {
     "browser-sync": "^2.17.0",
     "cssnano": "^3.7.6",
-    "del": "^2.2.2",
+    "del": "^3.0.0",
     "gh-pages": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-header": "^1.8.8",
@@ -37,6 +37,6 @@
     "gulp-postcss": "^7.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^2.1.0",
-    "postcss-cssnext": "^2.8.0"
+    "postcss-cssnext": "^3.0.2"
   }
 }
