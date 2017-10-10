@@ -37,8 +37,8 @@
   <a href="http://makeapullrequest.com">
     <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square" alt="PRs" />
   </a>
-  <a href="https://www.paypal.me/tiaanduplessis/1">
-    <img src="https://img.shields.io/badge/$-support-green.svg?style=flat-square" alt="Donate" />
+  <a href="https://greenkeeper.io/">
+    <img src="https://badges.greenkeeper.io/tiaanduplessis/wenk.svg" alt="Greenkeeper" />
   </a>
 </div>
 <br>
@@ -72,8 +72,6 @@
 </details>
 
 ## Introduction
-
-[![Greenkeeper badge](https://badges.greenkeeper.io/tiaanduplessis/wenk.svg)](https://greenkeeper.io/)
 
 **Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/tiaanduplessis/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/tiaanduplesssis/wenk/master/src/wenk.scss).
 
