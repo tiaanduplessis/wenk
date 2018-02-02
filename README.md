@@ -81,7 +81,7 @@
 - It's easy to use
 - It's easy to customize
 - It's pure CSS
-- Your already here
+- You're already here
 
 ## Install
 
