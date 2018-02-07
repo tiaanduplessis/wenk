@@ -10,9 +10,6 @@
   <a href="https://npmjs.org/package/wenk">
     <img src="https://img.shields.io/npm/v/wenk.svg?style=flat-square" alt="Package version" />
   </a>
-  <a href="https://badge.fury.io/bo/wenk">
-    <img src="https://badge.fury.io/bo/wenk.svg?style=flat-square" alt="Bower package" />
-  </a>
   <a href="https://npmjs.org/package/wenk">
   <img src="https://img.shields.io/npm/dm/wenk.svg?style=flat-square" alt="Downloads" />
   </a>
@@ -22,14 +19,8 @@
   <a href="https://travis-ci.org/tiaanduplessis/wenk">
     <img src="https://img.shields.io/travis/tiaanduplessis/wenk.svg?style=flat-square" alt="Travis Build" />
   </a>
-  <a href="https://github.com/RichardLitt/standard-readme)">
-    <img src="https://img.shields.io/badge/standard--readme-OK-green.svg?style=flat-square" alt="Standard Readme" />
-  </a>
   <a href="https://badge.fury.io/gh/tiaanduplessis%2Fwenk">
     <img src="https://badge.fury.io/gh/tiaanduplessis%2Fwenk.svg?style=flat-square" alt="GitHub version" />
-  </a>
-  <a href="https://dependencyci.com/github/tiaanduplessis/wenk">
-    <img src="https://dependencyci.com/github/tiaanduplessis/wenk/badge?style=flat-square" alt="Dependency CI" />
   </a>
   <a href="https://github.com/tiaanduplessis/wenk/blob/master/other/LICENSE">
     <img src="https://img.shields.io/npm/l/wenk.svg?style=flat-square" alt="License" />
@@ -91,12 +82,6 @@
 <link rel="stylesheet" href="https://unpkg.com/wenk/dist/wenk.css">
 <!-- Or -->
 <link rel="stylesheet" href="https://cdn.rawgit.com/tiaanduplessis/wenk/master/dist/wenk.css">
-```
-
-**Install with Bower**
-
-```sh
-$ bower install wenk
 ```
 
 **Install with npm**

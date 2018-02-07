@@ -5,7 +5,7 @@
   "main": "dist/wenk.css",
   "style": "dist/wenk.css",
   "scripts": {
-    "test": "echo lol nope yolo",
+    "test": "echo nope",
     "build": "gulp build",
     "start": "gulp demo",
     "dev": "gulp",
@@ -26,17 +26,17 @@
   "author": "Tiaan du Plessis @tiaanduplessis",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.17.0",
-    "cssnano": "^3.7.6",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
     "del": "^3.0.0",
     "gh-pages": "^1.0.0",
     "gulp": "^3.9.1",
     "gulp-header": "^2.0.1",
-    "gulp-load-plugins": "^1.3.0",
-    "gulp-plumber": "^1.1.0",
-    "gulp-postcss": "^7.0.0",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^3.0.0",
-    "postcss-cssnext": "^3.0.2"
+    "postcss-cssnext": "^3.1.0"
   }
 }
