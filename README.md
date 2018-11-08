@@ -44,27 +44,28 @@
     <img src="https://img.shields.io/twitter/url/https/github.com/tiaanduplessis/wenk.svg?style=social" alt="Tweet" />
   </a>
 </div>
-<br>
-<div align="center">
-  Built with ❤︎ by <a href="tiaanduplessis.co.za">Tiaan</a> and <a href="https://github.com/tiaanduplessis/wenk/graphs/contributors">contributors</a>
-</div>
 
-<h2>Table of Contents</h2>
-<details>
-  <summary>Table of Contents</summary>
-  <li><a href="#introduction">Introduction</a></li>
-  <li><a href="#why">Why</a></li>
-  <li><a href="#install">Install</a></li>
-  <li><a href="#usage">Usage</a></li>
-  <li><a href="#demo">Demo</a></li>
-  <li><a href="#support">Support</a></li>
-  <li><a href="#contributing">Contributing</a></li>
-  <li><a href="#license">License</a></li>
-</details>
+## Table of Contents
 
-## Introduction
+- [About](#about)
+- [As Seen in](#as-seen-in)
+- [Why](#why)
+- [Install](#install)
+- [Usage](#usage)
+- [Demo](#demo)
+- [Support](#support)
+- [Contributing](#contributing)
+- [License](#license)
+
+
+## About
 
 **Wenk** is a Lightweight tooltip available in pure CSS, [cssnext](http://cssnext.io/) using [PostCSS](http://postcss.org/), [Less](https://raw.githubusercontent.com/tiaanduplessis/wenk/master/src/wenk.less) or [SCSS](https://raw.githubusercontent.com/tiaanduplesssis/wenk/master/src/wenk.scss).
+
+## As Seen in
+
+- [20 Awesome Javascript & CSS Tooltip Libraries](https://bashooka.com/coding/javascript-css-tooltip-libraries/)
+- [Create Minified Tooltips in Pure CSS with Wenk](https://www.hongkiat.com/blog/pure-css-lightweight-tooltip-wenk/)
 
 ## Why
 
