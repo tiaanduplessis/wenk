@@ -30,7 +30,7 @@
     "cssnano": "^4.0.0",
     "del": "^3.0.0",
     "gh-pages": "^2.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-header": "^2.0.1",
     "gulp-load-plugins": "^1.5.0",
     "gulp-plumber": "^1.2.0",
