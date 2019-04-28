@@ -28,7 +28,7 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "cssnano": "^4.0.0",
-    "del": "^3.0.0",
+    "del": "^4.1.1",
     "gh-pages": "^2.0.0",
     "gulp": "^4.0.0",
     "gulp-header": "^2.0.1",
