@@ -54,6 +54,7 @@
 - [Usage](#usage)
 - [Demo](#demo)
 - [Support](#support)
+- [Building and testing](#building-and-testing)
 - [Contributing](#contributing)
 - [License](#license)
 
@@ -149,6 +150,47 @@ According to [doiuse.com](http://www.doiuse.com/) the following browsers are cur
 - Opera (12.1)
 - Opera Mini (5.0-8.0)
 - IE Mobile (10)
+
+## Building and testing
+
+The development tasks use Gulp 4. On Node.js 18 or newer, install the locked
+Yarn 1 dependencies with lifecycle scripts disabled, then run:
+
+```sh
+yarn install --frozen-lockfile --ignore-scripts --ignore-optional
+yarn lint
+yarn test
+yarn build
+```
+
+`build` removes only its five generated `dist/wenk.*` files, then builds them in
+parallel and updates `demo/wenk.min.css`. The separately maintained
+`dist/themes/material.css` and unrelated distribution files are preserved.
+`dev` builds once and watches the three source formats; `start` also serves the
+demo. Invalid or missing source files fail the build.
+
+The tests use temporary directories to check task registration, cleanup,
+repeatable builds, source-format preservation, build failures, watch rebuilds,
+and demo setup. The demo server is mocked in tests. `lint` is a non-mutating
+JavaScript syntax check.
+
+The checked-in distributions are intentionally unchanged by the task repair.
+Their old version/year banners are regenerated from the package metadata and
+current year when building. The existing cssnano 4 dependency also produces
+minified output that differs from the historical checked-in minified CSS: it
+removes the pixel padding fallback and replaces the old rounded
+`hsla(0,0%,7%,.8)` background value with the source `rgba(17,17,17,.8)` value.
+The unminified CSS, CSSNext, Less, and Sass bodies are unchanged.
+Review browser compatibility before publishing regenerated minified files.
+
+The Yarn lock updates the legacy optional macOS watcher to
+`fsevents@1.2.13`, avoiding the malware-affected versions in the previous lock.
+Native macOS watcher execution is not covered by the portable test suite.
+
+These changes do not modernize the complete legacy development dependency
+stack. Known vulnerabilities remain; do not expose the development server to
+untrusted networks or process untrusted stylesheets. No release or deployment
+is performed by the build or test commands.
 
 ## Contributing
 

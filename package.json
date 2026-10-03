@@ -5,12 +5,13 @@
   "main": "dist/wenk.css",
   "style": "dist/wenk.css",
   "scripts": {
-    "test": "echo nope",
+    "test": "node test/build.js",
     "build": "gulp build",
     "start": "gulp demo",
     "dev": "gulp",
     "size": "gulp size",
-    "deploy": "gulp build && gh-pages -d demo"
+    "deploy": "gulp build && gh-pages -d demo",
+    "lint": "node --check gulpfile.js && node --check test/build.js"
   },
   "keywords": [
     "wenk",

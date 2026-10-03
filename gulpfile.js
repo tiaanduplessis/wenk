@@ -1,10 +1,8 @@
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync');
 const del = require('del');
 const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
-const reload = browserSync.reload;
 
 // Pretty banner
 const banner = ['/**',
@@ -43,13 +41,19 @@ gulp.task('size', () => {
 
 // Clean output dir
 gulp.task('clean', () => {
-    return del(`${paths.output}**/*`);
+    // Themes are maintained separately and have no source generator.
+    return del([
+        'dist/wenk.css',
+        'dist/wenk.min.css',
+        'dist/wenk.less',
+        'dist/wenk.scss',
+        'dist/wenk.cssnext.css'
+    ]);
 });
 
 // Build minified CSS
 gulp.task('styles:minified', () => {
     return gulp.src(paths.input.css)
-        .pipe($.plumber())
         .pipe($.postcss(defaultPlugins.concat([
             require('cssnano')()
         ])))
@@ -66,7 +70,6 @@ gulp.task('styles:minified', () => {
 // Build CSS
 gulp.task('styles', () => {
     return gulp.src(paths.input.css)
-        .pipe($.plumber())
         .pipe($.postcss(defaultPlugins))
         .pipe($.header(banner, {
             pkg
@@ -104,19 +107,22 @@ gulp.task('styles:cssnext', () => {
     .pipe(gulp.dest(paths.output))
 })
 
-gulp.task('build', ['styles', 'styles:minified', 'styles:less', 'styles:scss', 'styles:cssnext']);
+gulp.task('build', gulp.series('clean', gulp.parallel(
+    'styles', 'styles:minified', 'styles:less', 'styles:scss', 'styles:cssnext'
+)));
 
 gulp.task('watch', () => {
-    gulp.watch([paths.input.css, paths.input.less, paths.input.scss], ['clean', 'build'])
+    return gulp.watch([paths.input.css, paths.input.less, paths.input.scss], gulp.series('build'));
 });
 
-gulp.task('demo', ['clean', 'build'], () => {
+gulp.task('demo', gulp.series('build', (done) => {
+  const browserSync = require('browser-sync');
+  gulp.watch([paths.input.css, paths.input.less, paths.input.scss], gulp.series('build'));
+  gulp.watch('./demo/**/*').on('change', browserSync.reload);
+
   browserSync({
     server: './demo'
-  });
+  }, done);
+}));
 
-  gulp.watch([paths.input.css, paths.input.less, paths.input.scss], ['build']);
-  gulp.watch('./demo/**/*').on('change', reload);
-});
-
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', gulp.series('build', 'watch'));
