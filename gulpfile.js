@@ -1,10 +1,8 @@
 const gulp = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
-const browserSync = require('browser-sync');
 const del = require('del');
 const $ = gulpLoadPlugins();
 const pkg = require('./package.json');
-const reload = browserSync.reload;
 
 // Pretty banner
 const banner = ['/**',
@@ -118,12 +116,13 @@ gulp.task('watch', () => {
 });
 
 gulp.task('demo', gulp.series('build', (done) => {
+  const browserSync = require('browser-sync');
+  gulp.watch([paths.input.css, paths.input.less, paths.input.scss], gulp.series('build'));
+  gulp.watch('./demo/**/*').on('change', browserSync.reload);
+
   browserSync({
     server: './demo'
   }, done);
-
-  gulp.watch([paths.input.css, paths.input.less, paths.input.scss], gulp.series('build'));
-  gulp.watch('./demo/**/*').on('change', reload);
 }));
 
 gulp.task('default', gulp.series('build', 'watch'));
