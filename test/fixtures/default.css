@@ -1,10 +1,3 @@
-/**
- * wenk - Lightweight tooltip for the greater good
- * @version v1.0.8
- * (c) 2026 Tiaan du Plessis @tiaanduplessis |
- * @link https://tiaanduplessis.github.io/wenk/
- * @license MIT
- */
  [data-wenk] {
     position: relative
 }
@@ -120,36 +113,6 @@
 
 [data-wenk][data-wenk-align="center"]:after, [data-wenk].wenk-align--center:after {
     text-align: center;
-}
-
-[data-wenk][data-wenk-color="danger"]:after, [data-wenk].wenk-color--danger:after {
-    background-color: #b91c1c;
-    color: #fff;
-}
-
-[data-wenk][data-wenk-color="warning"]:after, [data-wenk].wenk-color--warning:after {
-    background-color: #facc15;
-    color: #111;
-}
-
-[data-wenk][data-wenk-color="success"]:after, [data-wenk].wenk-color--success:after {
-    background-color: #15803d;
-    color: #fff;
-}
-
-[data-wenk][data-wenk-color="info"]:after, [data-wenk].wenk-color--info:after {
-    background-color: #1d4ed8;
-    color: #fff;
-}
-
-[data-wenk][data-wenk-color="black"]:after, [data-wenk].wenk-color--black:after {
-    background-color: #111;
-    color: #fff;
-}
-
-[data-wenk][data-wenk-color="white"]:after, [data-wenk].wenk-color--white:after {
-    background-color: #fff;
-    color: #111;
 }
 
 [data-wenk=""]:after {

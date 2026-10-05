@@ -86,7 +86,7 @@
 			<h1>Wenk 😉</h1>
 			<p>
 				Wenk is a Lightweight tooltip available in pure CSS, <a href="http://cssnext.io/">cssnext</a> using <a href="http://postcss.org/">PostCSS</a>, <a
-        href="http://lesscss.org/">Less</a> or <a href="http://sass-lang.com/">SCSS</a>. The <strong>minified version is just 733 bytes when gzipped</strong>.
+        href="http://lesscss.org/">Less</a> or <a href="http://sass-lang.com/">SCSS</a>. Run <code>yarn size</code> to check the current gzip sizes.
 				It can easily be styled using <code>data-*</code> attributes or classes. By default the tooltip will adjust to fit the content.
 			</p>
 		</section>
@@ -114,6 +114,16 @@
 			<h3>Display at different alignments!</h3>
 			<p><span data-wenk="👉 I'm right!" class="wenk-align--right wenk-length--large">Right wenk!</span></p>
 			<p><span data-wenk="👉 I'm center! 👈" class="wenk-align--center wenk-length--large">center wenk!</span></p>
+		</section>
+		<section class="center-xs">
+			<h3>Tooltip colors (unreleased)</h3>
+			<p>These variants need a package release before npm or CDN use.</p>
+			<p><span data-wenk="Danger tooltip" data-wenk-color="danger">Danger wenk!</span></p>
+			<p><span data-wenk="Warning tooltip" data-wenk-color="warning">Warning wenk!</span></p>
+			<p><span data-wenk="Success tooltip" data-wenk-color="success">Success wenk!</span></p>
+			<p><span data-wenk="Info tooltip" class="wenk-color--info">Info wenk!</span></p>
+			<p><span data-wenk="Black tooltip" class="wenk-color--black">Black wenk!</span></p>
+			<p><span data-wenk="White tooltip" class="wenk-color--white">White wenk!</span></p>
 		</section>
 		<section>
 			<a class="button" href="https://github.com/tiaanduplessis/wenk/archive/v1.0.6.zip" target="_blank">DOWNLOAD</a>

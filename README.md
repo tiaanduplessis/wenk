@@ -70,7 +70,7 @@
 
 ## Why
 
-- It's Lightweight with the **minified version being only 733 bytes when gzipped** :scream:
+- It's lightweight; run `yarn size` to check the current gzip sizes
 - It's easy to use
 - It's easy to customize
 - It's pure CSS
@@ -139,6 +139,42 @@ You can also align your text within the container
 <p><span data-wenk="I'm center!" class="wenk-align--center">Wenk in the center!</span></p>
 ```
 
+### Tooltip colors (unreleased)
+
+Color variants are available on the development branch and will need a package
+release before they are available through npm or a versioned CDN URL.
+
+Use `data-wenk-color` or the equivalent `.wenk-color--*` class. Choose one of
+`danger`, `warning`, `success`, `info`, `black`, or `white`:
+
+```html
+<span data-wenk="This action cannot be undone" data-wenk-color="danger">Delete</span>
+<span data-wenk="Check these details" data-wenk-color="warning">Review</span>
+<span data-wenk="Changes saved" data-wenk-color="success">Saved</span>
+<span data-wenk="More information" class="wenk-color--info">Details</span>
+<span data-wenk="Dark tooltip" class="wenk-color--black">Black</span>
+<span data-wenk="Light tooltip" class="wenk-color--white">White</span>
+```
+
+Colors combine with the existing position, width and alignment options. Each
+variant sets both an opaque background and a contrasting text color. No color
+option, an empty value, or an unknown value keeps the existing default. Use one
+color option per element. Always communicate the meaning in the tooltip text,
+not through color alone.
+
+Customize matching background/text pairs when compiling Sass or Less
+(for example, `$wenk-bg-color-danger` and `$wenk-font-color-danger`, or the
+corresponding `@wenk-` variables). Set Sass overrides before importing Wenk;
+set Less overrides after importing it, or use the compiler's `modifyVars`.
+CSSNext uses `--bg-color-danger` and
+`--font-color-danger` in `src/wenk.css`; these are compiled into the distributed
+CSS. Check text contrast again after customization. Showing and dismissing a
+tooltip works exactly as before.
+
+These variants apply to the base Wenk stylesheet. The separately maintained
+`dist/themes/material.css` theme is not included; combining the two can leave
+the material theme's arrow and background colors mismatched.
+
 ## Demo
 
 Check out the demo [here](https://tiaanduplessis.github.io/wenk/).
@@ -171,17 +207,21 @@ demo. Invalid or missing source files fail the build.
 
 The tests use temporary directories to check task registration, cleanup,
 repeatable builds, source-format preservation, build failures, watch rebuilds,
-and demo setup. The demo server is mocked in tests. `lint` is a non-mutating
-JavaScript syntax check.
+and demo setup. Color tests compile CSSNext, Sass and Less, compare all
+selectors/declarations and generated assets, preserve a pre-color default
+fixture, verify custom overrides, and check the six text/background contrast
+ratios. Browser rendering and pointer/touch interactions require separate QA. Serve the
+repository locally and open `test/manual.html` to compare the unminified,
+minified and demo assets on light/dark surfaces.
+The demo server is mocked in tests. `lint` is a non-mutating JavaScript syntax
+check.
 
-The checked-in distributions are intentionally unchanged by the task repair.
-Their old version/year banners are regenerated from the package metadata and
-current year when building. The existing cssnano 4 dependency also produces
-minified output that differs from the historical checked-in minified CSS: it
-removes the pixel padding fallback and replaces the old rounded
-`hsla(0,0%,7%,.8)` background value with the source `rgba(17,17,17,.8)` value.
-The unminified CSS, CSSNext, Less, and Sass bodies are unchanged.
-Review browser compatibility before publishing regenerated minified files.
+Distributions and the demo stylesheet are generated together. Version/year
+banners use the package metadata and current year; the package version is not
+changed by a build. The existing cssnano 4 dependency removes the pixel padding
+fallback and uses the source `rgba(17,17,17,.8)` default background, rather than
+the historical rounded `hsla(0,0%,7%,.8)` value. Review browser compatibility
+before publishing regenerated minified files.
 
 The Yarn lock updates the legacy optional macOS watcher to
 `fsevents@1.2.13`, avoiding the malware-affected versions in the previous lock.

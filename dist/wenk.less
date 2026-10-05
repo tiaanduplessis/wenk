@@ -1,13 +1,25 @@
 /**
  * wenk - Lightweight tooltip for the greater good
- * @version v1.0.6
- * (c) 2018 Tiaan du Plessis @tiaanduplessis |
+ * @version v1.0.8
+ * (c) 2026 Tiaan du Plessis @tiaanduplessis |
  * @link https://tiaanduplessis.github.io/wenk/
  * @license MIT
  */
  @wenk-font-size: 13px;
 @wenk-font-color: #fff;
 @wenk-bg-color: rgba(17, 17, 17, .8);
+@wenk-bg-color-danger: #b91c1c;
+@wenk-font-color-danger: #fff;
+@wenk-bg-color-warning: #facc15;
+@wenk-font-color-warning: #111;
+@wenk-bg-color-success: #15803d;
+@wenk-font-color-success: #fff;
+@wenk-bg-color-info: #1d4ed8;
+@wenk-font-color-info: #fff;
+@wenk-bg-color-black: #111;
+@wenk-font-color-black: #fff;
+@wenk-bg-color-white: #fff;
+@wenk-font-color-white: #111;
 @wenk-length-small: 80px;
 @wenk-length-medium: 150px;
 @wenk-length-large: 260px;
@@ -123,6 +135,36 @@
 	&[data-wenk-align="center"]:after,
 	&.wenk-align--center:after {
 		text-align: center;
+	}
+
+	&[data-wenk-color="danger"]:after, &.wenk-color--danger:after {
+		background-color: @wenk-bg-color-danger;
+		color: @wenk-font-color-danger;
+	}
+
+	&[data-wenk-color="warning"]:after, &.wenk-color--warning:after {
+		background-color: @wenk-bg-color-warning;
+		color: @wenk-font-color-warning;
+	}
+
+	&[data-wenk-color="success"]:after, &.wenk-color--success:after {
+		background-color: @wenk-bg-color-success;
+		color: @wenk-font-color-success;
+	}
+
+	&[data-wenk-color="info"]:after, &.wenk-color--info:after {
+		background-color: @wenk-bg-color-info;
+		color: @wenk-font-color-info;
+	}
+
+	&[data-wenk-color="black"]:after, &.wenk-color--black:after {
+		background-color: @wenk-bg-color-black;
+		color: @wenk-font-color-black;
+	}
+
+	&[data-wenk-color="white"]:after, &.wenk-color--white:after {
+		background-color: @wenk-bg-color-white;
+		color: @wenk-font-color-white;
 	}
 }
 
