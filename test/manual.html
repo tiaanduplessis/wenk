@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wenk color regression checks</title>
+  <link id="wenk-stylesheet" rel="stylesheet" href="../dist/wenk.css">
+  <style>
+    body { margin: 0; font: 16px/1.5 sans-serif; }
+    header, section { padding: 2rem; }
+    section { display: flex; flex-wrap: wrap; gap: 4rem 2rem; }
+    section h2 { flex-basis: 100%; margin: 0; }
+    .dark { background: #222; color: #fff; }
+    .trigger { display: inline-block; min-width: 10rem; padding: 1rem; border: 1px solid #888; }
+    #outside { margin: 2rem; padding: 2rem; border: 1px dashed #888; }
+    select { font: inherit; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Wenk color regression checks</h1>
+    <p>Hover each trigger, then move away and repeat. On a touch device, compare
+    tapping and tapping outside with the default tooltip. This fixture does not
+    change the library's hover or dismissal behavior.</p>
+    <p>Check readable text, both color APIs, the positions, widths and alignments.
+    Empty tooltips should never appear; unknown colors should use the default.</p>
+    <label>Stylesheet <select id="stylesheet">
+      <option value="../dist/wenk.css">Unminified</option>
+      <option value="../dist/wenk.min.css">Minified</option>
+      <option value="../demo/wenk.min.css">Demo asset</option>
+      <option value="fixtures/default.css">Pre-color baseline (no variants)</option>
+    </select></label>
+  </header>
+  <section class="light"><h2>Light surface</h2>
+    <span class="trigger" data-wenk-color="danger" data-wenk="Danger: readable text" data-wenk-pos="top" data-wenk-length="medium" data-wenk-align="center">Danger (attribute)</span>
+    <span class="trigger" data-wenk-color="warning" data-wenk="Warning: readable text" data-wenk-pos="right" data-wenk-length="medium" data-wenk-align="center">Warning (attribute)</span>
+    <span class="trigger" data-wenk-color="success" data-wenk="Success: readable text" data-wenk-pos="bottom" data-wenk-length="medium" data-wenk-align="center">Success (attribute)</span>
+    <span class="trigger" data-wenk-color="info" data-wenk="Info: readable text" data-wenk-pos="left" data-wenk-length="medium" data-wenk-align="center">Info (attribute)</span>
+    <span class="trigger" data-wenk-color="black" data-wenk="Black: readable text" data-wenk-pos="top" data-wenk-length="medium" data-wenk-align="center">Black (attribute)</span>
+    <span class="trigger" data-wenk-color="white" data-wenk="White: readable text" data-wenk-pos="bottom" data-wenk-length="medium" data-wenk-align="center">White (attribute)</span>
+  </section>
+  <section class="dark"><h2>Dark surface</h2>
+    <span class="trigger wenk-color--danger" data-wenk="Danger: readable text" data-wenk-pos="top" data-wenk-length="medium" data-wenk-align="center">Danger (class)</span>
+    <span class="trigger wenk-color--warning" data-wenk="Warning: readable text" data-wenk-pos="right" data-wenk-length="medium" data-wenk-align="center">Warning (class)</span>
+    <span class="trigger wenk-color--success" data-wenk="Success: readable text" data-wenk-pos="bottom" data-wenk-length="medium" data-wenk-align="center">Success (class)</span>
+    <span class="trigger wenk-color--info" data-wenk="Info: readable text" data-wenk-pos="left" data-wenk-length="medium" data-wenk-align="center">Info (class)</span>
+    <span class="trigger wenk-color--black" data-wenk="Black: readable text" data-wenk-pos="top" data-wenk-length="medium" data-wenk-align="center">Black (class)</span>
+    <span class="trigger wenk-color--white" data-wenk="White: readable text" data-wenk-pos="bottom" data-wenk-length="medium" data-wenk-align="center">White (class)</span>
+  </section>
+  <section><h2>Unchanged behavior</h2>
+    <span class="trigger" data-wenk="Default tooltip">Default</span>
+    <span class="trigger" data-wenk="Unknown uses default" data-wenk-color="unknown">Unknown color</span>
+    <span class="trigger" data-wenk="Empty color uses default" data-wenk-color="">Empty color</span>
+    <span class="trigger wenk-color--danger" data-wenk="">Empty tooltip</span>
+  </section>
+  <div id="outside">Move or tap here to leave the trigger</div>
+  <script>
+    document.getElementById('stylesheet').addEventListener('change', function () {
+      document.getElementById('wenk-stylesheet').href = this.value;
+    });
+  </script>
+</body>
+</html>

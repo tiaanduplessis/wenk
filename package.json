@@ -5,13 +5,13 @@
   "main": "dist/wenk.css",
   "style": "dist/wenk.css",
   "scripts": {
-    "test": "node test/build.js",
+    "test": "node test/build.js && node test/colors.js",
     "build": "gulp build",
     "start": "gulp demo",
     "dev": "gulp",
     "size": "gulp size",
     "deploy": "gulp build && gh-pages -d demo",
-    "lint": "node --check gulpfile.js && node --check test/build.js"
+    "lint": "node --check gulpfile.js && node --check test/build.js && node --check test/colors.js"
   },
   "keywords": [
     "wenk",
@@ -38,6 +38,9 @@
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.2.2",
     "gulp-size": "^3.0.0",
-    "postcss-cssnext": "^3.1.0"
+    "less": "4.2.2",
+    "postcss": "7.0.6",
+    "postcss-cssnext": "^3.1.0",
+    "sass": "1.77.8"
   }
 }

@@ -1,7 +1,7 @@
 /**
  * wenk - Lightweight tooltip for the greater good
- * @version v1.0.6
- * (c) 2018 Tiaan du Plessis @tiaanduplessis |
+ * @version v1.0.8
+ * (c) 2026 Tiaan du Plessis @tiaanduplessis |
  * @link https://tiaanduplessis.github.io/wenk/
  * @license MIT
  */
@@ -9,6 +9,18 @@
     --font-size: 13px;
     --font-color: #fff;
     --bg-color: rgba(17, 17, 17, .8);
+    --bg-color-danger: #b91c1c;
+    --font-color-danger: #fff;
+    --bg-color-warning: #facc15;
+    --font-color-warning: #111;
+    --bg-color-success: #15803d;
+    --font-color-success: #fff;
+    --bg-color-info: #1d4ed8;
+    --font-color-info: #fff;
+    --bg-color-black: #111;
+    --font-color-black: #fff;
+    --bg-color-white: #fff;
+    --font-color-white: #111;
     --length-small: 80px;
     --length-medium: 150px;
     --length-large: 260px;
@@ -117,6 +129,36 @@
     }
     &[data-wenk-align="center"]:after, &.wenk-align--center:after {
         text-align: center;
+    }
+
+    &[data-wenk-color="danger"]:after, &.wenk-color--danger:after {
+        background-color: var(--bg-color-danger);
+        color: var(--font-color-danger);
+    }
+
+    &[data-wenk-color="warning"]:after, &.wenk-color--warning:after {
+        background-color: var(--bg-color-warning);
+        color: var(--font-color-warning);
+    }
+
+    &[data-wenk-color="success"]:after, &.wenk-color--success:after {
+        background-color: var(--bg-color-success);
+        color: var(--font-color-success);
+    }
+
+    &[data-wenk-color="info"]:after, &.wenk-color--info:after {
+        background-color: var(--bg-color-info);
+        color: var(--font-color-info);
+    }
+
+    &[data-wenk-color="black"]:after, &.wenk-color--black:after {
+        background-color: var(--bg-color-black);
+        color: var(--font-color-black);
+    }
+
+    &[data-wenk-color="white"]:after, &.wenk-color--white:after {
+        background-color: var(--bg-color-white);
+        color: var(--font-color-white);
     }
 }
 
