@@ -52,6 +52,7 @@
 - [Why](#why)
 - [Install](#install)
 - [Usage](#usage)
+  - [Touch input](#touch-input)
 - [Demo](#demo)
 - [Support](#support)
 - [Building and testing](#building-and-testing)
@@ -138,6 +139,40 @@ You can also align your text within the container
 <p><span data-wenk="I'm right!" class="wenk-align--right">Wenk to the right!</span></p>
 <p><span data-wenk="I'm center!" class="wenk-align--center">Wenk in the center!</span></p>
 ```
+
+### Touch input
+
+Wenk's default stylesheet uses a CSS `::after` tooltip with `pointer-events: none`
+and has no built-in tap-to-dismiss handler. On touch input, a tooltip can remain
+visible after a tap,
+and tapping over it can activate a link or other element underneath it.
+
+If your application prefers to hide tooltips when the primary pointing device
+cannot conveniently hover or has limited accuracy, add this optional override
+after Wenk's default stylesheet:
+
+```css
+@media (hover: none), (pointer: coarse) {
+  [data-wenk]::after {
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+```
+
+For the material theme, also include `[data-wenk]::before` in the selector list
+to hide its arrow.
+
+This suppresses the tooltip; it does not add tap-to-dismiss or change link
+behavior. The [`hover` and `pointer` media features](https://www.w3.org/TR/mediaqueries-4/#mf-interaction)
+describe the primary pointing device chosen by the browser, not each individual
+interaction. On hybrid touch/mouse devices, this can hide tooltips while using a
+mouse or leave them enabled while using touch. Test the input combinations your
+application supports.
+
+Keep essential information available outside the tooltip, including for touch,
+keyboard, and assistive-technology users. Do not rely on hover-only content for
+instructions or labels.
 
 ## Demo
 
